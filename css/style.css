@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+    :root {
+    font-size: 62.5%;
+    max-width: 100%;
+    --text-color:#ffffff;
+    --text-bgcolor: rgb(31, 14, 41);
+    --bg-ulli-color: rgb(28, 18, 37);
+    --surface-color-hover:rgb(48, 21, 63);
+    --sociallinks: white;
+    --border-color: rgb(61, 32, 90);
+    --header-color: rgb(48, 31, 69);
+    --botao-switch: url(../img/moon-stars.svg);
+    
+    }
+    body {
+    background-color: var(--text-bgcolor);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    }
+    #container {
+    width: 80%;
+    margin: 0 auto;
+    }
+    #profile {
+    margin-top: 3.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    }
+    #profile img {
+    width: 11.2rem;
+    border-radius: 50%;
+    }
+    
+    ul {
+    list-style: none;
+    margin-top: 2.4rem;
+    }
+    ul li {
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: 0.8rem;
+    margin-top: 1.6rem;
+    width: 22.4rem;
+    text-align: center;
+    line-height: 3;
+    background-color: var(--bg-ulli-color);
+    font-size: 1.8rem;
+    }
+    ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    }
+    
+    ul li:hover {
+    background: var(--surface-color-hover);
+    border: 1px solid rgb(96, 28, 160); 
+    }
+    
+    #social-links {
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem auto 1.6rem auto;
+    font-size: 2.4rem;
+    gap: 1.6rem;
+    }
+    #social-links a {
+    text-decoration: none;
+    color: var(--sociallinks);
+    }
+    
+    footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 5.6rem;
+    margin-bottom: 1.6rem;
+    }
+    #switch {
+    position: relative;
+    width: 6.4rem;
+    margin: 0.4rem auto;
+    margin-top: 2.4rem;
+    }
+    #switch button {
+    width: 3.2rem;
+    height: 3.2rem;
+    background: white var(--botao-switch) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    }
+    #switch span {
+    width: 6.4rem;
+    height: 2.4rem;
+    background: var(--surface-color-hover);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    display: block;
+    border-radius: 9999px;
+    } 
+    
+    .light #switch button {
+    right: 0;
+    left: initial;
+    }
+    
+    .light {
+    --text-color: black;
+    --text-bgcolor: rgb(210, 197, 221);
+    --bg-ulli-color: rgb(144, 116, 180);
+    --surface-color-hover: rgb(114, 55, 153);
+    --sociallinks: blueviolet;
+    --border-color: rgb(114, 55, 153);
+    --header-color: rgb(144, 116, 180);
+    --botao-switch: url(../img/sun.svg);
+    }
+    @media (max-width: 400px) {
+    #container {
+    width: 80%;
+    margin: 0 auto;
+    }
+    ul {
+    width: 100%;
+    }
+    #social-links {
+    width: 100%;
+    }
+    footer {
+    width: 100%;
+    }
+    }
+    

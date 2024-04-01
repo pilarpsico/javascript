@@ -1,0 +1,44 @@
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    }
+    main article {
+    margin-top: 0.8rem;
+    }
+    
+    p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 100;
+    padding: 0.8rem;
+    }
+    
+    .italic {
+    font-style: italic;
+    font-size: 1.8rem;
+    }
+    .weight {
+    font-weight: 600;
+    }
+    .family {
+    font-family:'Times New Roman', Times, serif, sans-serif;
+    font-weight: 100;
+    }
+    .fim {
+    font-style: italic;
+    }
+    
+    .light {
+    --text-color: black;
+    --text-bgcolor: rgb(210, 197, 221);
+    --bg-ulli-color: rgb(144, 116, 180);
+    --border-color: rgb(114, 55, 153);
+    --surface-color-hover: rgb(114, 55, 153);
+    
+    }
+    
+    

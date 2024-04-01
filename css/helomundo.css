@@ -1,0 +1,41 @@
+.blue {
+    color: blue;
+}
+
+button {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+#caixa {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: none;
+    margin-top: 1.6rem;
+}
+;.settimeout {
+    margin right: 100px;
+    
+}
+
+#mouse {
+    width: 30.0rem;
+}
+.mouse {
+    color:darkslateblue;
+}
+.onmouse {
+    text-align: center;
+    color:darkslateblue;
+}
+
+#submit {
+    width: 30.0rem;
+    margin-top: 2.4rem;
+}
+
+form {
+    margin-top: 2.4rem;
+    margin-bottom: 3.6rem;
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: aquamarine;
+}
+
+p { 
+    font-family: 'Satisfy', cursive;
+    font-size: 4.8rem;
+    margin: 20.0rem;
+    color:black;
+    text-align: center;
+
+}
+script {
+    color: rgb(179, 134, 221);
+}

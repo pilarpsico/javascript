@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/helomundo.css">
+</head>
+<body>
+    <main id="main">
+        <div id="container">
+            <p id="text" class="texto">
+                Oi Mundo</p>
+
+            <p
+            id="segundo" class="second">
+            Hello Mundo!</p>
+            
+            <p class="classe">tentando pegar a classe</p>
+        </div>    
+<!--------------------mostrando eventos de disparar onclick--------------------->
+        <button onclick="saudacoes()">Diga Olá</button>
+
+        <button onclick="caixa()"> Mostrar Caixa</button>
+        <div id="caixa"></div>
+
+        <p class="settimeout"> ao acrescentar setTimeOut a função da caixa, igual bola de cristal, dá pra
+            fazer a caixa desaparecer com opacity, porém só recarregando a página
+            pra reativar a função, ainda não sei o que fará disparar novamente.
+            Mas acabei de colocar display none em lugar de opacity e a função agora funciona
+            perfeitamente.
+        </p>
+
+        <div id="mouse">
+            <p class="mouse" onmouseover="trocartexto()" onmouseout="voltartexto()">
+                Passe o mouse em cima</p>
+                <p class="onmouse"> através da função onmouseover mudei, e onmouseout voltei.
+                    onmouseover passa o mouse cima e através da função onmouseout tirando o mouse de cima
+                    e estabelecendo o mesmo texto para o paragráfo.
+                </p>
+        </div>
+
+        <div id="submit">
+            <p> agora estamos trabalhando com função enviar e validação do formulário, 
+                repetição é a chave para o aprendizado. através do onsubmit = enviar(), 
+                criarei a função para validação do formulário. ainda não sei como enviar
+                para o back-end.
+            </p>
+        
+            <form onsubmit="enviar()">
+                <label> Nome: </label>
+                <input id="name" type="text" placeholder="Informe seu nome"><br>
+
+                <label>Informe sua idade</label>
+                <input id="age" type="number" placeholder="18"><br>
+
+                <label> Qual seu sorvete predileto?</label>
+                <input id="sorvete" type="text" placeholder="Morango, chocolate, etc.">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+  <script src="script/helomundo.js"></script>
+ 
+  
+
+   
+ </body>
+</html>
