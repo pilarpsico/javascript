@@ -79,6 +79,7 @@ function voltartexto() {
 function enviar(){
     const name = document.getElementById("name");
     const age = document.getElementById("age");
+    const sorvete = document.getElementById("sorvete");
 
     if(name.value == ""){
         alert("Preencha o campo do nome");
@@ -90,7 +91,7 @@ function enviar(){
         alert("você é menor de idade")
      }
     
-     if(sorvete.value == ""){
+     if(sorvete.value == "") {
         alert("Preencha o campo para enviar")
      }
     
@@ -98,4 +99,40 @@ function enviar(){
 
 //--------------------------------------------------------//
 
+// criando outra jeito de executar a função //
+const form = document.getElementById("form");
 
+form.addEventListener("submit", enviar);
+
+function enviar() { 
+   
+
+    const name = document.getElementById("name");
+    const age = document.getElementById("age");
+    const sorvete = document.getElementById("sorvete");
+
+    if(name.value == ""){
+        alert("Preencha o campo do nome");
+     }
+          
+     if(age.value >= 18) {
+        alert("você é maior de idade")
+     }else{
+        alert("você é menor de idade")
+     }
+    
+     if(sorvete.value == "") {
+        alert("Preencha o campo para enviar")
+     }
+    
+};
+
+//------------------------------------------------------//
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+    alert("dizendo olá para addEventListener")
+});
+
+//----------------------------------------------------------//
