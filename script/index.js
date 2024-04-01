@@ -1,13 +1,17 @@
 
-
-
-
+function toggleMode() {
     
-const html = document.getElementsByTagName("html");
+   
+    
+        const html = document.querySelector("html");
 
-    html.classList.remove("light");
-
-
-
+        if(html.classList.contains("light")){
+            html.classList.remove("light")
+        }else{
+            html.classList.add("light")
+        }
+         
+      
         
+}
   
