@@ -71,7 +71,7 @@ function trocartexto() {
 function voltartexto() {
     const voltart = document.querySelector(".mouse");
 
-    voltart.innerHTML = "passe o mouse em cima";
+    voltart.innerHTML = "pilarpsico é meu mais novo username do momento.";
 };
 
 //-------------------------------------------------//
